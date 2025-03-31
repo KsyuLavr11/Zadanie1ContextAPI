@@ -5,7 +5,6 @@ import { sortTodos } from '../components/helpers/sortTodos';
 
 export const useTodos = () => {
 	const [todos, setTodos] = useState([]);
-	const [todo, setTodo] = useState(null);
 	const [isLoading, setIsLoading] = useState(false);
 	const [error, setError] = useState(null);
 	const [isSort, setIsSort] = useState(true);
@@ -79,7 +78,5 @@ export const useTodos = () => {
 		setSearchTerm,
 		isSort,
 		setIsSort,
-		todo,
-		setTodo,
 	};
 };

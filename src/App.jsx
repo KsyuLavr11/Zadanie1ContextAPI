@@ -7,17 +7,6 @@ import styles from './App.module.css';
 import { AppContext } from './context.js';
 
 export const App = () => {
-	/*const {
-		todos,
-		isLoading,
-		error,
-		createTodo,
-		updateTodo,
-		deleteTodo,
-		setIsSort,
-		setSearchTerm,
-		isSort,
-	} = useTodos([]);*/
 	const userData = useTodos();
 
 	const { isLoading, error, setSearchTerm } = userData;
